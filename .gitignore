@@ -2,8 +2,10 @@
 __pycache__/
 *.py[cod]
 *.pyo
+*.pyd
+*.egg-info/
 
-# Virtual Environments
+# Virtual Environment
 venv/
 .venv/
 env/
@@ -11,22 +13,35 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# VS Code
+# IDE
 .vscode/
+.idea/
 
-# Streamlit
-.streamlit/secrets.toml
+# OS
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
 
-# OS Files
-.DS_Store
-Thumbs.db
+# Environment
+.env
+
+# Model files
+saved_models/
+*.pth
+*.pt
+*.ckpt
+*.onnx
 
 # Dataset
-data/
+data/raw/
+data/processed/
+data/eye_image/
+outputs/
 
-# Model Files
-saved_models/*.pth
-saved_models/*.pt
+# Cache
+.cache/
+
+# Streamlit
+.streamlit/secrets.toml
